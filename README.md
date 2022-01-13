@@ -52,7 +52,7 @@ Para la tercera parte de la practica, se solicita que mediante la tecnica llamad
 - Tal y como se aprecia en el script, lo unico que hago es ir modificando la posicion de la imagen en el eje X, es decir, desplazarla horizontalmente, en funcion del efecto parallax, es decir del movimiento de la camara, bien sea tanto para la derecha como para la izquierda.
 
 - Finalmente, para ver reflejada esta implementacion, podemos ver este gif, donde se aprecia el resultado.
-![Alt text](/img/resultado3.gif)
+![Alt text](/img/camara.gif)
 
 ## Pooling Objects
 Para este ultimo punto se solicita que se implemente una técnica de creación de objetos que mejore la optimización del juego, ya que esta se basa en crear una cantidad de objetos limitada, los cuales iremos activando en función de nuestras necesidades. Una vez hemos usado el objeto, simplemente lo desactivamos, de tal forma que lo volvemos a tener disponible para usarlo de nuevo.
