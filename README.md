@@ -5,34 +5,11 @@ Para la realización de esta octava práctica, partiré de la escena desarrollad
 - Scroll con movimiento del personaje. El fondo se repite hasta que pare el juego
 - Fondo con efecto parallax. El efecto empieza cuando el jugador empieza a moverse, esto se debe comunicar mediante eventos.
 - Utilizar la técnica de pool de objetos para ir creando elementos en el juego sobre los que debe saltar el jugador evitándolos o para adquirir puntos si salta sobre ellos
-
-Como consideración, hay que tener en cuenta, que la idea de esta practica es trabajar con el plugin **Cinemachine**  el cual tendré que instalar de **Unity Registry**. Para ponernos un poco en contexto, este plugin permite añadir cámaras virtuales, entre las cuales se podrá ir cambiando, además de otras funcionalidades como añadir una zona de confinamiento, es decir, una zona que funcionara como limite de movimiento de nuestra cámara.
  
 
-## Seguimiento de personajes
-La primera tarea de esta practica, es la de añadir dos cámaras para seguir a dos personajes, respectivamente. La cámara del personaje A, será la cámara que ya tenemos incluida en nuestra escena, es decir la cámara principal. Para el personaje B, añadiré una cámara virtual, la cual se cambiara como cámara principal en el momento que mueva este personaje, además, la zona que abarca esta segunda cámara será mayor que la cámara del personaje A. Para poder realizar esta primera tarea, para realizar el cambio de camara, lo que he hecho ha sido añadir una nueva camara a mi escena, la cual le he asignado que siga el personaje B, y para poder ponerla como principal, lo que he hecho ha sido añadirle una prioridad mayor:
-
-- Cámara del personaje A
-  ![Alt text](/img/camaraA.png)
-  ![Alt text](/img/camaraA.gif)
-  
-- Cámara del personaje B
-  ![Alt text](/img/camaraB.png)
-  ![Alt text](/img/camaraB.gif)
-
-## Seguimiento de varios personajes
-Para esta segunda parte de la practica, se solicita que ahora se añada una nueva cámara que permita hacer el seguimiento de varios personajes a la vez, es decir, que en todo momento estén dentro del plano de la cámara, los personajes que se le indiquen independientemente del movimiento que estén realizando. Para crear esto, es bastante sencillo: ya que Cinemachine, te da la opción de crear una cámara que haga el seguimiento de varios personajes. Para ello, si me voy al inspector, selecciono cinemachine y creo una "Target Group Camera"
-
-- Crear una **"Cámara de objetivo múltiple"**
-
-![Alt text](/img/target1.png)
-
-![Alt text](/img/target2.png)
-
-![Alt text](/img/target3.png)
-
-- Una vez he seleccionado este objeto, automáticamente se me crean en mi escena una nueva cámara virtual, y un GameObject llamado TargetGroup. Lo único que me queda por hacer, es indicar que objetos quiero que siga la cámara dentro del nuevo GameObject que se ha creado, de resto no es necesario hacer nada mas, porque ya viene todo configurado.
-![Alt text](/img/target.gif)
+## BakcGorund Scroll
+Para esta primer aparte de la practica, se solicita que se de un efecto de fondo infinito al fondo de nuestra escena, mediante una técnica denominada background scrolling. Esta técnica consiste en ir moviendo el fondo de nuestra escena a medida que nos movemos por el juego, de tal forma que esto daría un efecto de fondo infinito por la escena.
+Para ello, lo único que debo hacer es duplicar el fondo en la escena y mediante el siguiente script, lo único que voy a ir haciendo es ir desplazando el fondo por la escena una cantidad igual a su tamaño, de esta forma quedaría el efecto de fondo infinito.
 
 
 
@@ -49,6 +26,7 @@ Para la tercera parte de la practica, se solicita que mediante la tecnica llamad
 - Tal y como se aprecia en el script, lo unico que hago es ir modificando la posicion de la imagen en el eje X, es decir, desplazarla horizontalmente, en funcion del efecto parallax, es decir del movimiento de la camara, bien sea tanto para la derecha como para la izquierda.
 
 - Finalmente, para ver reflejada esta implementacion, podemos ver este gif, donde se aprecia el resultado.
+- 
 ![Alt text](/img/camara.gif)
 
 ## Pooling Objects
