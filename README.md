@@ -44,10 +44,7 @@ Para la tercera parte de la practica, se solicita que mediante la tecnica llamad
 
 - Una vez definido el fondo de la escena, dividido en varias capas, lo siguiente que debo hacer es crear el script que se va a encargar de determinar el desplazamiento que debe realizar el fondo de nuestra escena para dar la sensación de movimiento, en función del movimiento que realice la cámara.
 
-![Alt text](/img/camara.gif)
-
-- Para la segunda parte de esta tarea, se debe crear una zona de confinamiento mas pequeña, pero para la cámara del personaje B, por lo que los pasos son los mismos que los anteriores, pero ahora definiremos el Polygon Collider un poco mas pequeño que el de la cámara del personaje A.
-- Para la zona de confinamiento del personaje B, lo que hare será definir los limites en el puerto, para comprobar su correcto funcionamiento.
+![Alt text](/img/camara.png)
 
 - Tal y como se aprecia en el script, lo unico que hago es ir modificando la posicion de la imagen en el eje X, es decir, desplazarla horizontalmente, en funcion del efecto parallax, es decir del movimiento de la camara, bien sea tanto para la derecha como para la izquierda.
 
