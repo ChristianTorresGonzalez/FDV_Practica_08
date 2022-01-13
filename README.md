@@ -36,24 +36,23 @@ Para esta segunda parte de la practica, se solicita que ahora se añada una nuev
 
 
 
-## Zonas de confinamiento
-Para la tercera parte de la practica, se solicita que se creen unas zonas de confinamiento, es decir, se delimite mediante un objeto con la propiedad "Polygon Collider" cuales serán los limites por los que se podrá mover la cámara, por lo que cuando la cámara llega a este punto de la escena, el personaje podrá seguir moviéndose, pero la cámara se quedara fija, a no ser que se mueva en la dirección opuesta al limite establecido para la frontera de movimiento para la cámara. 
-- Para poder llevar esto a cabo, lo primero que tengo que hacer es crear un GameObject vacío, el cual llamare como **Boundaries** y le añadiré la propiedad Polygon Collider. Una vez añadida esta propiedad, solo queda definir dichos limites en la escena.
+## Parallax
+Para la tercera parte de la practica, se solicita que mediante la tecnica llamada **Parallax**, cree un efecto en la escena de que el entorno se mueve, es decir el fondo de la escena parece que tiene un movimiento a la vez que el jugador se desplaza. 
+- Para poder llevar esto a cabo, lo primero que tengo que hacer es crear un GameObject vacío, el cual llamare como **Background** y le añadiré los diferentes sprites que conforman el fondo de la escena. E aquí la clave de todo, ya que toda esta técnica se fundamente en que el fondo de nuestro juego tiene que estar dividido en varias capas, de tal forma que a cda una de ellas se le pueda indicar una velocidad de movimiento diferente.
 
-![Alt text](/img/fronteraA.png)
+![Alt text](/img/fondoParallax.png)
 
-- Una vez definido los limites, cuando ejecutamos nuestro juego, tal y como se ve en el video, cuando el personaje se acerca al borde derecho del mapa, la cámara se queda quieta, pero cuando vuelve a moverse hacia la izquierda, la cámara recupera su movimiento.
+- Una vez definido el fondo de la escena, dividido en varias capas, lo siguiente que debo hacer es crear el script que se va a encargar de determinar el desplazamiento que debe realizar el fondo de nuestra escena para dar la sensación de movimiento, en función del movimiento que realice la cámara.
 
-![Alt text](/img/fronteraA.gif)
+![Alt text](/img/camara.gif)
 
 - Para la segunda parte de esta tarea, se debe crear una zona de confinamiento mas pequeña, pero para la cámara del personaje B, por lo que los pasos son los mismos que los anteriores, pero ahora definiremos el Polygon Collider un poco mas pequeño que el de la cámara del personaje A.
 - Para la zona de confinamiento del personaje B, lo que hare será definir los limites en el puerto, para comprobar su correcto funcionamiento.
 
-![Alt text](/img/fronteraB.png)
+- Tal y como se aprecia en el script, lo unico que hago es ir modificando la posicion de la imagen en el eje X, es decir, desplazarla horizontalmente, en funcion del efecto parallax, es decir del movimiento de la camara, bien sea tanto para la derecha como para la izquierda.
 
-- Tal y como se aprecia en el video, en el momento en el que la cámara llega a la frontera establecida, se queda fija en esa posición, pero el personaje sigue su movimiento por la escena.
-
-![Alt text](/img/fronteraB.gif)
+- Finalmente, para ver reflejada esta implementacion, podemos ver este gif, donde se aprecia el resultado.
+![Alt text](/img/resultado3.gif)
 
 ## Pooling Objects
 Para este ultimo punto se solicita que se implemente una técnica de creación de objetos que mejore la optimización del juego, ya que esta se basa en crear una cantidad de objetos limitada, los cuales iremos activando en función de nuestras necesidades. Una vez hemos usado el objeto, simplemente lo desactivamos, de tal forma que lo volvemos a tener disponible para usarlo de nuevo.
