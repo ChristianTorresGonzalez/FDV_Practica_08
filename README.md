@@ -72,4 +72,4 @@ Finalmente, una vez el objeto sale de la escena, lo único que tengo que hacer e
 
 Finalmente, en este gif, vemos una representación del resultado.
 
-![Alt text](/img/resultado.gif)
+![Alt text](/img/resultado4.gif)
