@@ -11,7 +11,9 @@ Para la realización de esta octava práctica, partiré de la escena desarrollad
 Para esta primer aparte de la practica, se solicita que se de un efecto de fondo infinito al fondo de nuestra escena, mediante una técnica denominada background scrolling. Esta técnica consiste en ir moviendo el fondo de nuestra escena a medida que nos movemos por el juego, de tal forma que esto daría un efecto de fondo infinito por la escena.
 Para ello, lo único que debo hacer es duplicar el fondo en la escena y mediante el siguiente script, lo único que voy a ir haciendo es ir desplazando el fondo por la escena una cantidad igual a su tamaño, de esta forma quedaría el efecto de fondo infinito.
 
+![Alt text](/img/background.png)
 
+![Alt text](/img/background.gif)
 
 ## Parallax
 Para la tercera parte de la practica, se solicita que mediante la tecnica llamada **Parallax**, cree un efecto en la escena de que el entorno se mueve, es decir el fondo de la escena parece que tiene un movimiento a la vez que el jugador se desplaza. 
